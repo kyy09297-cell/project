@@ -2,6 +2,11 @@
 window.onload = function () {
     alert("مرحبًا بكم في موقع تمر القصيم 🌴");
     greeting();
+    
+    // إضافة رسالة تفاعلية ذكية عند زيارة صفحة فريق العمل
+    if (window.location.pathname.includes("about.html")) {
+        console.log("مرحباً بكم في صفحة من نحن - فريق عمل متجر تمور خلاص القصيم!");
+    }
 };
 
 // رسالة ترحيبية حسب الوقت
@@ -9,10 +14,12 @@ function greeting() {
     let hour = new Date().getHours();
     let message = document.getElementById("welcomeMessage");
 
-    if (hour < 12) {
-        message.innerHTML = "☀️ صباح الخير، أهلاً بكم في موقع تمر القصيم";
-    } else {
-        message.innerHTML = "🌙 مساء الخير، أهلاً بكم في موقع تمر القصيم";
+    if (message) {
+        if (hour < 12) {
+            message.innerHTML = "☀️ صباح الخير، أهلاً بكم في موقع تمر القصيم";
+        } else {
+            message.innerHTML = "🌙 مساء الخير، أهلاً بكم في موقع تمر القصيم";
+        }
     }
 }
 
@@ -30,14 +37,10 @@ function showDesigners() {
     );
 }
 
-‎// تفاعل بسيط عن فوائد التمر
+// تفاعل بسيط عن فوائد التمر
 function showBenefits() {
-    document.getElementById("benefits").innerHTML =
-‎        "🌴 تمر القصيم غني بالألياف، يمنح الطاقة، ويحتوي على فيتامينات ومعادن مفيدة للجسم.";
-}
-// إضافة رسالة تفاعلية ذكية عند زيارة صفحة فريق العمل
-if (window.location.pathname.includes("about.html")) {
-    window.onload = function() {
-        console.log("مرحباً بكم في صفحة من نحن - فريق عمل متجر تمور خلاص القصيم!");
-    };
+    let benefitsElement = document.getElementById("benefits");
+    if (benefitsElement) {
+        benefitsElement.innerHTML = "🌴 تمر القصيم غني بالألياف، يمنح الطاقة، ويحتوي على فيتامينات ومعادن مفيدة للجسم.";
+    }
 }
