@@ -4,13 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اتصل بنا - متجر خلاص القصيم</title>
+    
+    <!-- وضعنا كود الألوان والتنسيق هنا لتظهر الألوان فوراً -->
+    <style>
+        /* تنسيق عام */
+        body{
+            margin:0;
+            font-family: "Tahoma", sans-serif;
+            background-color:#f8f5f0;
+            color:#4b2e1e;
+            line-height:1.8;
+            text-align: center;
+        }
+
+        /* شريط التنقل */
+        .navbar{
+            background-color:#5c3b1e;
+            display:flex;
+            justify-content:center;
+            padding:15px;
+            gap:25px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .navbar a{
+            color:#f5d27a;
+            text-decoration:none;
+            font-size:18px;
+            font-weight:bold;
+            transition:0.3s;
+            padding:8px 15px;
+            border-radius:8px;
+        }
+
+        /* تأثيرات hover */
+        .navbar a:hover{
+            background-color:#8b5e34;
+            color:white;
+            transform:scale(1.05);
+        }
+
+        /* العناوين والخطوط */
+        h1{
+            color: #5c3d1e;
+            margin-top: 20px;
+        }
+        h2{
+            color: #5c3d1e;
+            margin-top: 30px;
+            font-size:28px;
+        }
+        p{
+            font-size:18px;
+        }
+
+        /* تنسيق زر الاتصال المباشر */
+        .tel-link {
+            display: inline-block;
+            background-color: #7a8f5b;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+            margin-top: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .tel-link:hover {
+            background-color: #637549;
+            transform: scale(1.03);
+        }
+
+        /* تنسيق الأسئلة الشائعة <details> */
+        details {
+            background-color: #ffffff;
+            border: 1px solid #d8b98a;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px auto;
+            width: 85%;
+            max-width: 700px;
+            text-align: right;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+        details[open] {
+            border-color: #5c3b1e;
+            background-color: #f5d27a;
+        }
+        summary {
+            font-size: 18px;
+            cursor: pointer;
+            color: #5c3b1e;
+            outline: none;
+        }
+        details p {
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding-right: 15px;
+            border-right: 3px solid #5c3b1e;
+            font-size: 16px;
+            color: #4b2e1e;
+        }
+
+        /* تنسيق القوائم الجانبية */
+        ul {
+            text-align: right;
+            display: inline-block;
+            max-width: 600px;
+            background-color: #d8b98a;
+            padding: 20px 40px;
+            border-radius: 12px;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
 <body>
+
+<!-- أضفنا شريط التنقل لتتحركي بين الصفحات -->
+<div class="navbar">
+    <a href="index.html">الرئيسية</a>
+    <a href="page2.html">عن التمور</a>
+    <a href="page6.html">منتجنا المميز</a>
+    <a href="page1.html">اتصل بنا</a>
+    <a href="about.html">من نحن</a>
+</div>
+
 <!--بداية محتوى صفحة الاتصال -->
 
     <h1>اتصل بنا</h1>
     <p>يمكنكم التواصل معنا عبر رقم الهاتف التالي، يسعدنا استقبال استفساراتكم في أي وقت:</p>
-    <a href="tel:966500004892">رقم التواصل المباشر</a>
+    <a href="tel:966500004892" class="tel-link">رقم التواصل المباشر</a>
 
     <br><br>
 
@@ -22,42 +150,32 @@
         <p>نعم، نوفر خدمة التوصيل السريع لجميع المدن والمناطق لضمان وصول التمور طازجة إلى باب منزلكم في غضون 3-5 أيام عمل.</p>
     </details>
 
-    <br>
-
     <details>
         <summary><strong>كيف يمكنني حفظ التمور لفترة طويلة؟</strong></summary>
         <p>نوصي بحفظ التمور في مكان بارد وجاف (مثل الثلاجة) للحفاظ على رطوبتها ومذاقها، كما يمكن تجميدها في أكياس مفرغة من الهواء لمدة تصل إلى سنة.</p>
     </details>
 
-    <br>
-
     <details>
-        <summary><strong>هل التمور طبيعية 100% وبدون إضافات؟</strong></summary>
+        <summary><strong>هل التمور طبيعية 100% وبدون إضافات?</strong></summary>
         <p>بكل تأكيد، تمورنا قطف موسمي طازج، تعبأ في كراتينها الأصلية فور تنقيتها، ولا يتم إضافة أي زيوت أو مواد سكرية أو مواد حافظة إليها.</p>
     </details>
-
-    <br>
 
     <details>
         <summary><strong>ما هي طرق الدفع المتاحة؟</strong></summary>
         <p>نقبل الدفع عبر التحويل البنكي، أو الدفع عند الاستلام في مناطق محددة، كما نوفر خيارات الدفع الإلكتروني الموثوقة لسهولة التعامل.</p>
     </details>
 
-    <br>
-
     <details>
         <summary><strong>هل تتوفر أسعار خاصة للجملة والكميات الكبيرة؟</strong></summary>
         <p>نعم، لدينا أسعار منافسة جداً لطلبات الجملة، والمناسبات، والجمعيات الخيرية. يرجى التواصل معنا مباشرة عبر الهاتف للحصول على عرض سعر مخصص.</p>
     </details>
-
-    <br>
 
     <details>
         <summary><strong>هل يمكنني استرجاع الطلب في حال وجود ملاحظات؟</strong></summary>
         <p>نحن نضمن جودة منتجاتنا 100%، وفي حال وجود أي ملاحظة، نلتزم باستبدال المنتج أو استرجاع المبلغ لضمان رضاكم التام.</p>
     </details>
 
-    <br><br>
+    <br>
 
 <!--إضافة معلومات تواصل إضافية لتعزيز المحتوى-->
 
@@ -80,6 +198,5 @@
     
 <!--نهاية محتوى صفحة اتصل بنا-->
 
-
-    </body>
+</body>
 </html>
