@@ -4,8 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المنتجات - متجر خلاص القصيم</title>
+    
+    <style>
+        /* تنسيق عام */
+        body{
+            margin:0;
+            font-family: "Tahoma", sans-serif;
+            background-color:#f8f5f0;
+            color:#4b2e1e;
+            line-height:1.8;
+            text-align: center;
+        }
+
+        /* شريط التنقل */
+        .navbar{
+            background-color:#5c3b1e;
+            display:flex;
+            justify-content:center;
+            padding:15px;
+            gap:25px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .navbar a{
+            color:#f5d27a;
+            text-decoration:none;
+            font-size:18px;
+            font-weight:bold;
+            transition:0.3s;
+            padding:8px 15px;
+            border-radius:8px;
+        }
+
+        /* تأثيرات hover */
+        .navbar a:hover{
+            background-color:#8b5e34;
+            color:white;
+            transform:scale(1.05);
+        }
+
+        /* تنسيق الأقسام المكتوبة بـ <section> */
+        section {
+            margin:30px auto;
+            width:85%;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            transition:0.4s;
+            background-color:#d8b98a; /* لون مستوحى من التمر */
+        }
+
+        section:hover{
+            transform:translateY(-5px);
+            box-shadow:0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        /* العناوين والخطوط */
+        h1{
+            color: #5c3d1e;
+            margin-top: 20px;
+        }
+        h2{
+            margin-bottom:15px;
+            font-size:28px;
+        }
+        p{
+            font-size:18px;
+        }
+        
+        /* تنسيق قائمة بطاقة المنتج */
+        dl {
+            text-align: right;
+            max-width: 500px;
+            margin: 0 auto;
+            background: #f5d27a;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        dt {
+            font-size: 19px;
+            color: #5c3b1e;
+            margin-top: 10px;
+        }
+        dd {
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* تنسيق القوائم */
+        ul, ol {
+            text-align: right;
+            display: inline-block;
+            max-width: 600px;
+        }
+
+        blockquote {
+            font-style: italic;
+            background-color: #f5d27a;
+            padding: 15px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
+
+<div class="navbar">
+    <a href="index.html">الرئيسية</a>
+    <a href="page2.html">عن التمور</a>
+    <a href="page6.html">منتجنا المميز</a>
+    <a href="page1.html">اتصل بنا</a>
+    <a href="about.html">من نحن</a>
+</div>
+
     <h1>خلاص القصيم الفاخر</h1>
     <p>نقدم لكم منتجنا الرائد الذي نضع فيه كل خبرتنا وشغفنا؛ تمر خلاص فاخر مختار بعناية من أجود مزارع القصيم، يتميز بقوامه الطري ونكهته العسلية الأصيلة ليليق بمناسباتكم ويومياتكم.</p>
 
@@ -83,5 +194,5 @@
     <h3>متجر تمر القصيم - جودة نعتز بها</h3>
     <p>جميع الحقوق محفوظة &copy; 2026</p>
     
-    </body>
+</body>
 </html>
