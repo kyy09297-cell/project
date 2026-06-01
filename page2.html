@@ -4,8 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>عن التمور - متجر خلاص القصيم</title>
+    
+    <!-- وضعنا كود الألوان والتنسيق هنا لتظهر الألوان فوراً -->
+    <style>
+        /* تنسيق عام */
+        body{
+            margin:0;
+            font-family: "Tahoma", sans-serif;
+            background-color:#f8f5f0;
+            color:#4b2e1e;
+            line-height:1.8;
+            text-align: center;
+        }
+
+        /* شريط التنقل */
+        .navbar{
+            background-color:#5c3b1e;
+            display:flex;
+            justify-content:center;
+            padding:15px;
+            gap:25px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .navbar a{
+            color:#f5d27a;
+            text-decoration:none;
+            font-size:18px;
+            font-weight:bold;
+            transition:0.3s;
+            padding:8px 15px;
+            border-radius:8px;
+        }
+
+        /* تأثيرات hover */
+        .navbar a:hover{
+            background-color:#8b5e34;
+            color:white;
+            transform:scale(1.05);
+        }
+
+        /* تنسيق الأقسام المكتوبة بـ <section> */
+        section {
+            margin:30px auto;
+            width:85%;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            transition:0.4s;
+            background-color:#d8b98a; /* لون مستوحى من التمر */
+        }
+
+        section:hover{
+            transform:translateY(-5px);
+            box-shadow:0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        /* العناوين والخطوط */
+        h1{
+            color: #5c3d1e;
+            margin-top: 20px;
+        }
+        h2{
+            margin-bottom:15px;
+            font-size:28px;
+        }
+        p{
+            font-size:18px;
+        }
+        blockquote {
+            font-style: italic;
+            background-color: #f5d27a;
+            padding: 15px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
+
+<!-- أضفنا شريط التنقل لتتحركي بين الصفحات -->
+<div class="navbar">
+    <a href="index.html">الرئيسية</a>
+    <a href="page2.html">عن التمور</a>
+    <a href="page6.html">منتجنا المميز</a>
+    <a href="page1.html">اتصل بنا</a>
+    <a href="about.html">من نحن</a>
+</div>
+
     <h1>عن خلاص القصيم</h1>
     <p>خلاص القصيم هو من أجود أنواع التمور التي تتواجد بوفرة في المملكة العربية السعودية، ويحتل مكانة مرموقة في الموائد العربية كرمز للأصالة والضيافة الفاخرة التي توارثتها الأجيال كابراً عن كابر.</p>
 
@@ -32,10 +118,10 @@
     <br>
 
     <section>
-    <h2>النخلة: رمز العطاء والاستدامة</h2>
-    <p>لا تمثل النخلة في القصيم مجرد مصدر للغذاء، بل هي جزء لا يتجزأ من الهوية الثقافية والتراثية للمنطقة. فقد ارتبطت حياة الإنسان العربي بهذه الشجرة المباركة منذ القدم، حيث استمد منها غذاءه وبنى من سعفها وجذوعها بيوته وأدواته.</p>
-    <p>اليوم، تستمر هذه العلاقة من خلال الاهتمام المتزايد بزراعة النخيل وتطوير إنتاج التمور، لتظل نخلة الخلاص رمزاً للصمود والكرم، وشاهداً على تاريخ عريق يجمع بين بركة الأرض وجهد الإنسان في واحات القصيم الغناء.</p>
-</section>
+        <h2>النخلة: رمز العطاء والاستدامة</h2>
+        <p>لا تمثل النخلة في القصيم مجرد مصدر للغذاء، بل هي جزء لا يتجزأ من الهوية الثقافية والتراثية للمنطقة. فقد ارتبطت حياة الإنسان العربي بهذه الشجرة المباركة منذ القدم، حيث استمد منها غذاءه وبنى من سعفها وجذوعها بيوته وأدواته.</p>
+        <p>اليوم، تستمر هذه العلاقة من خلال الاهتمام المتزايد بزراعة النخيل وتطوير إنتاج التمور، لتظل نخلة الخلاص رمزاً للصمود والكرم، وشاهداً على تاريخ عريق يجمع بين بركة الأرض وجهد الإنسان في واحات القصيم الغناء.</p>
+    </section>
 
     <br>
 
@@ -55,5 +141,5 @@
     <h3>متجر تمر القصيم - مذاق الأصالة في كل حبة</h3>
     <p>جميع الحقوق محفوظة لمتجرنا &copy; 2026</p>
     
-    </body>
+</body>
 </html>
